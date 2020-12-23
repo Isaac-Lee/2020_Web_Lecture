@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5 API</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+      </head>
+      <body>
+        <button id="startBtn">start</button> Timer : <label id="time"></label><br>
+        이미지 파일 선택<input id="img" type="file"><br>
+        <button id="uploadBtn">이미지 추가</button><br><br>
+        <div id="image" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        A바구니<br><br>
+        <div class="box" id="boxA" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br>
+        B바구니<br><br>
+        <div class="box" id="boxB" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br>
+      </body>
+      <script src="./index.js"></script>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Yesung-Lee">
+  <meta name="keywords" content="Keyboard, Mechanical, Capacitive, Membrane">
+  <link rel="stylesheet" href="../css/index.css">
+  <title>Shoping Cart</title>
+</head>
+<body>
+  <div id = "select">
+    <i class="material-icons" id = "cart-icon">shopping_cart</i>
+  </div>
+  <br>
+  <div id = 'popup' class="modal">
+    <form action="post" id="product-info">
+      <b>상품 장바구니 등록</b><br><br>
+      <label for="product-img">상품 이미지: <input id ="product-img" type="file"></label><br>
+      <label for="product-name">상품 이름: <input type="text" name="product-name" id ="product-name"></label><br>
+      <label for="product-price">상품 가격: <input type="text" name="product-price" id ="product-price" size="10"></label><br>
+      <label for="product-number">상품 개수: <input type="text" name="product-number" id ="product-number" size="5"></label>
+      최대 50개 이하까지 선택 가능<br>
+      배송 방법: 
+      <label for = "product-delivery-regular">
+        <input type="radio" name="product-delivery" id ="product-delivery-regular" value="regular">
+        일반 배송
+      </label>
+      <label for = "product-delivery-express">
+        <input type="radio" name="product-delivery" id ="product-delivery-express" value="express">
+        새벽 배송
+      </label><br>
+      <input type="button" id="submit-button" value="장바구니 담기">
+      <input type="button" id="cancel-button" value="취소">
+    </form>
+  </div>
+
+  <div class = "cart">
+    <div id = "regular">
+      일반배송:
+      <label for = "regular-select-all">
+        <input type="checkbox" value="selectAll" id="regular-select-all" name="select-all">전체 선택
+      </label>
+      <input type="button" value="선택 삭제" id="delete-selected-regular" name="delete-selected">
+      <input type="button" value="새벽 배송으로 이동" id="move-to-express" name="move-to-express">
+      <br>
+      <br>
+      <table class = "product-list">
+        <thead>
+          <tr>
+            <th>선택</th>
+            <th>상품 이미지</th>
+            <th>상품 이름</th>
+            <th>상품 개별 가격</th>
+            <th>상품 개수</th>
+            <th>상품 구매 가격</th>
+          </tr>
+        </thead>
+        <tbody id="regular-product-list">
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="5">총 가격</th>
+            <td id="regular-product-price">0</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id = "express">
+      새벽배송:
+      <label for = "express-select-all">
+        <input type="checkbox" value="selectAll" id="express-select-all" name="select-all">전체 선택
+      </label>
+      <input type="button" value="선택 삭제" id="delete-selected-express" name="delete-selected">
+      <input type="button" value="일반 배송으로 이동" id="move-to-regular" name="move-to-regular">
+      <br>
+      <br>
+      <table class = "product-list">
+        <thead>
+          <tr>
+            <th>선택</th>
+            <th>상품 이미지</th>
+            <th>상품 이름</th>
+            <th>상품 개별 가격</th>
+            <th>상품 개수</th>
+            <th>상품 구매 가격</th>
+          </tr>
+        </thead>
+        <tbody id="express-product-list">
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="5">총 가격</th>
+            <td id="express-product-price">0</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div id = "search">
+    <form id="serch-product">
+      상품 이름: <input type="text" name="serch-product-name" id="serch-product-name"><br>
+      가격 범위: <input type="text" name="min-price" id="min-price"> ~ <input type="text" name="max-price" id="max-price"><br>
+      <br>
+      <input type="button" value="검색" id="search-button"> <input type="button" value="원래 색으로 바꾸기" id="reset-color-button">
+    </form>
+  </div>
+  <script src="../js/index.js"></script>
+</body>
+</html>

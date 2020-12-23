@@ -1,0 +1,92 @@
+#add-todo-box {
+  display: none;
+  position: absolute;
+  top: 3px;
+  left: 80px;
+  border: 2px outset;
+  border-radius: 5px;
+  padding: 30px;
+  width: 400px;
+  height: 90px;
+  background-color: #cbe1e7;
+}
+
+#todo-date {
+  margin-left: 45px;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+
+#todo-title {
+  margin-left: 48px;
+  margin-bottom: 3px;
+}
+
+#todo-save-btn {
+  margin-top: 3px;
+  margin-left: 80px;
+}
+
+#join-box {
+  display: none;
+  position: absolute;
+  top: 3px;
+  right: 120px;
+  border: 2px outset;
+  border-radius: 5px;
+  padding: 30px;
+  width: 250px;
+  height: 80px;
+  background-color: #ff7f50;
+}
+
+#user-id {
+  margin-left: 50px;
+  margin-bottom: 3px;
+}
+
+#user-pass {
+  margin-bottom: 3px;
+}
+
+#login-btn {
+  margin-left: 68px;
+}
+
+#signin-btn {
+  margin-left: 25px;
+}
+
+
+#logout-btn, #join-btn, #user-id-show {
+  float: right;
+  margin-right: 3px;
+}
+
+.todo {
+  border: 1px solid black;
+  background-color: skyblue;
+  margin: 5px;
+  padding: 5px;
+  height: 30px;
+}
+
+.date {
+  color: red;
+}
+
+th {
+  border: 1px solid black;
+  height: 20px;
+}
+
+td {
+  border: 1px solid black;
+  height: 300px;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+}

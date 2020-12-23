@@ -1,0 +1,132 @@
+#header {
+  border:10px outset blue;
+  text-align: center;
+  background-color: skyblue;
+  color:white;
+  padding : 20px;
+}
+
+.layer {
+  padding: 10px;
+  border: 5px solid;
+}
+
+#l1 {
+  border-color: blue;
+}
+#l2 {
+  border-color: pink;
+}
+#l3 {
+  border-color: violet;
+}
+#l4 {
+  border-color: mediumseagreen;
+}
+#l5 {
+  border-color: tomato;
+}
+#poster {
+  float: right;
+  width: 200px;
+  height: 300px;
+  margin: 10px;
+  border-radius: 10px;
+}
+#title:hover {
+  background-color: lightgray;
+  color: green;
+}
+#eventBtn {
+  margin: 10px;
+}
+#covid {
+  position: relative;
+  border: solid 2px red;
+  width: 500px;
+  height: 600px;
+}
+#seat {
+  border: solid 2px orange;
+  position: absolute;
+  top: 200px;
+  left: 30px;
+  width: 300px;
+  height: 200px;
+}
+#mask {
+  border: solid 2px blue;
+  position: absolute;
+  top: 300px;
+  left: 60px;
+  width: 300px;
+  height: 200px;
+}
+#l4 em {
+  color: blue;
+}
+#l5 th {
+  background-color: lightgray;
+}
+#l5 #VIP {
+  background-color: #ff9900;
+}
+#l5 #S {
+  background-color: #cc99ff;
+}
+#l5 #B {
+  background-color: #ccffcc;
+}
+
+@media (min-width: 768px) {
+  #wraper2 {
+    display: flex;
+  }
+  #l4 {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  #l5 {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 992px) {
+  #wraper1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  #wraper2 {
+    display: grid;
+  }
+  #wraper3 {
+    display: flex;
+  }
+  #l1 {
+    float: left;
+    width: 75%;
+    box-sizing: border-box;
+  }
+  #l2 {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+  }
+  #l3 {
+    float: left;
+    box-sizing: border-box;
+  }
+  #l4 {
+    float: left;
+    width: auto;
+    box-sizing: border-box;
+  }
+  #l5 {
+    float: left;
+    width: auto;
+    box-sizing: border-box;
+  }
+}
